@@ -1,5 +1,5 @@
 /*Google fonts import*/
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 
 /* General styles */
 body {
@@ -17,9 +17,24 @@ h3 {
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #252525;
+
 }
 
+/*Menu*/
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+
+#menu>li {
+    margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
 
 /* Header */
 header {
@@ -39,19 +54,7 @@ header a {
     color: inherit;
 }
 
-#menu {
-    font-size: 110%;
-    letter-spacing: 4px;
-    list-style-type: none;
-}
 
-#menu>li {
-    margin-bottom: 1em;
-}
-
-.active {
-    border-bottom: 1px solid #3a3a3a;
-}
 
 /* Navbar styles with dropdown toggle */
 nav {
@@ -101,10 +104,60 @@ main {
     color: white;
 }
 
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
 
-/* Footer */
-#social-icons {
-    list-style-type: none;
-}
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 3rem;
+    }
 
-/* i am fixed */
+    #menu {
+        display: flex;
+    }
+
+    #menu>li {
+        padding-left: 3rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 180%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    /* Main content */
+    main {
+        /* Push main content down to accommodate larger header */
+        margin-top: 79px;
+    }
+
+    /* Yoga */
+    #cover-text {
+        width: 500px;
+        height: 250px;
+        right: 50px;
+        background-color: rgb(96, 108, 32, .6);
+        padding-top: 80px;
+        padding-left: 80px;
+        margin-top: 80px;
+    }
+
+    #cover-list {
+        list-style-type: none;
+    }
+
+    /* Footer */
+    #social-icons {
+        list-style-type: none;
+    }
+
+    /* i am fixed */
