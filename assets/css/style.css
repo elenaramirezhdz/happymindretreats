@@ -155,6 +155,83 @@ a:link {
 
 }
 
+
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+
+    /*Benefits section*/
+    #benefits {
+        display: flex;
+        align-items: center;
+        padding-right: 1px;
+        padding-left: 1px;
+    }
+
+    #benefits-heading {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+}
+
+
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu>li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 100%;
+        line-height: 45px;
+        margin: 0 0.1rem;
+    }
+
+    #start-text {
+        max-width: 600px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #benefits {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        margin: 0 auto;
+        max-width: 600px;
+    }
+
+    #motivation {
+        max-width: 600px;
+        width: 600px;
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+        background-color: #f46e06;
+    }
+
+}
+
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     #menu a:hover {
@@ -228,104 +305,36 @@ a:link {
 
 }
 
-/* Media query: large or landscape phones (576px and up) */
-@media screen and (min-width: 576px) {
-
-    /*Benefits section*/
-    #benefits {
-        display: flex;
-        align-items: center;
-        padding-right: 1px;
-        padding-left: 1px;
-    }
-
-    #benefits-heading {
-        text-align: center;
-        padding-bottom: 50px;
-    }
+/* Main content */
+main {
+    /* Push main content down to accommodate larger header */
+    margin-top: 79px;
 }
 
+/* Yoga */
+#cover-text {
+    width: 500px;
+    height: 250px;
+    right: 50px;
+    background-color: rgb(96, 108, 32, .6);
+    padding-top: 80px;
+    padding-left: 80px;
+    margin-top: 80px;
+    line-height: 30px;
+}
 
+#cover-list {
+    list-style-type: none;
+}
 
-/* Media query: tablets and larger (768px and up) */
-@media screen and (min-width: 768px) {
+/* Footer */
+#social-icons {
+    list-style-type: none;
+    align-items: baseline;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-    /* Header */
-    nav {
-        display: block;
-        position: relative;
-        box-shadow: none;
-        width: fit-content;
-        padding-right: 1rem;
-    }
-
-    #menu {
-        display: flex;
-    }
-
-    #menu>li {
-        padding-left: 1rem;
-    }
-
-    .nav-toggle-label {
-        display: none;
-    }
-
-    #logo {
-        font-size: 100%;
-        line-height: 45px;
-        margin: 0 0.1rem;
-    }
-
-    #start-text {
-        max-width: 600px;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    #benefits {
-        display: grid;
-        grid-template-columns: auto;
-        align-items: center;
-        text-align: center;
-        gap: 30px;
-        margin: 0 auto;
-        max-width: 600px;
-
-
-
-    }
-
-    /* Main content */
-    main {
-        /* Push main content down to accommodate larger header */
-        margin-top: 79px;
-    }
-
-    /* Yoga */
-    #cover-text {
-        width: 500px;
-        height: 250px;
-        right: 50px;
-        background-color: rgb(96, 108, 32, .6);
-        padding-top: 80px;
-        padding-left: 80px;
-        margin-top: 80px;
-        line-height: 30px;
-    }
-
-    #cover-list {
-        list-style-type: none;
-    }
-
-    /* Footer */
-    #social-icons {
-        list-style-type: none;
-        align-items: baseline;
-        display: flex;
-        gap: 50px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    /* i am fixed */
+/* i am fixed */
