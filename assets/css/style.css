@@ -130,6 +130,22 @@ a:link {
     text-align: center;
 }
 
+/*Benefits section*/
+#benefits {
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+    padding-left: 50px;
+    gap: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#benefits-heading {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
