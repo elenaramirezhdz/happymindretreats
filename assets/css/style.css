@@ -107,7 +107,7 @@ main {
 
 #register-button {
     background-color: #f46e06;
-    color: black;
+    color: white;
     border: 1px solid black;
     width: 200px;
     padding: 5px 5px;
@@ -127,6 +127,20 @@ a:link {
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
+    }
+
+    #register-button {
+        background-color: #f46e06;
+        color: white;
+        border: 1px solid black;
+        width: 200px;
+        height: 50px;
+        padding: 5px 5px;
+        text-transform: uppercase;
+    }
+
+    #register-button a {
+        color: white;
     }
 
     #start-text,
