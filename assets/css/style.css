@@ -143,7 +143,16 @@ a:link {
         color: white;
     }
 
-    #start-text,
+    #start-text {
+        padding-right: 150px;
+        padding-left: 150px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+        width: 800px;
+        margin: 0 auto;
+    }
+
     #motivation {
         padding-right: 150px;
         padding-left: 150px;
@@ -156,6 +165,11 @@ a:link {
         background-color: #f46e06;
         color: white;
         margin-top: 50px;
+    }
+
+    #motivation h4 {
+        width: 800px;
+        margin: 0 auto;
     }
 
     /*Benefits section*/
