@@ -123,6 +123,38 @@ a:link {
     width: 80px;
 }
 
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu>li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 100%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+}
+
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     #menu a:hover {
@@ -156,8 +188,8 @@ a:link {
     #motivation {
         padding-right: 150px;
         padding-left: 150px;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 80px;
+        padding-bottom: 80px;
         text-align: center;
     }
 
@@ -224,7 +256,7 @@ a:link {
         position: relative;
         box-shadow: none;
         width: fit-content;
-        padding-right: 3rem;
+        padding-right: 1rem;
     }
 
     #menu {
@@ -232,7 +264,7 @@ a:link {
     }
 
     #menu>li {
-        padding-left: 3rem;
+        padding-left: 1rem;
     }
 
     .nav-toggle-label {
@@ -240,9 +272,28 @@ a:link {
     }
 
     #logo {
-        font-size: 180%;
-        line-height: 75px;
-        margin: 0 0.5rem;
+        font-size: 100%;
+        line-height: 45px;
+        margin: 0 0.1rem;
+    }
+
+    #start-text {
+        max-width: 600px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #benefits {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        margin: 0 auto;
+        max-width: 600px;
+
+
+
     }
 
     /* Main content */
