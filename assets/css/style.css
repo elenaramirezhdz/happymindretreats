@@ -254,6 +254,11 @@ a:link {
     /* Footer */
     #social-icons {
         list-style-type: none;
+        align-items: baseline;
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     /* i am fixed */
