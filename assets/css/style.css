@@ -22,115 +22,6 @@ h3 {
 
 }
 
-/*About page*/
-
-.hidden-heading {
-    display: none;
-}
-
-.about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    /* Center vertically */
-}
-
-.flex2 {
-    width: 50%;
-    padding: 20px;
-    text-align: center;
-}
-
-.flex1 {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    .about {
-        flex-direction: column;
-        /* Stack columns on small screens */
-        text-align: center;
-    }
-
-    .flex1,
-    .flex2 {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-}
-
-/* Responsive styles for screens 576px and below */
-@media (max-width: 576px) {
-    .about {
-        flex-direction: column;
-        /* Stack columns on small screens */
-        text-align: center;
-    }
-
-    .flex1,
-    .flex2 {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-}
-
-/* Media query for screens 390px and below */
-@media (max-width: 390px) {
-    .about h2 {
-        font-size: 20px;
-        /* Adjust font size for smaller screens */
-    }
-}
-
-/* Media query for screens 280px and below */
-@media (max-width: 280px) {
-    .about {
-        align-items: flex-start;
-        /* Align columns to the top on very small screens */
-    }
-
-    .flex1,
-    .flex2 {
-        width: 100%;
-        /* Full width for columns on very small screens */
-    }
-
-    .about h2 {
-        font-size: 18px;
-        /* Adjust font size for very small screens */
-    }
-
-    .flex1 {
-        width: fit-content;
-    }
-}
-
-/* Media query for screens above 992px (big laptops and desktops) */
-@media (min-width: 992px) {
-    .about {
-        padding: 40px;
-        /* Add more spacing around the container for larger screens */
-    }
-
-    .flex1,
-    .flex2 {
-        width: 30%;
-        /* Further adjust column width for big laptops and desktops */
-        margin: 0 30px;
-        /* Add more spacing between columns */
-    }
-
-    .about h2 {
-        font-size: 32px;
-        /* Increase font size for big laptops and desktops */
-    }
-}
-
-/*About page end*/
-
 #motivation {
     padding-right: 150px;
     padding-left: 150px;
@@ -676,7 +567,7 @@ main {
 }
 
 /* Responsive styles for the gallery */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     #photos {
         flex-direction: column;
     }
@@ -716,4 +607,59 @@ main {
         width: 800px;
         margin: 0 auto;
     }
+}
+
+/* Styles for the About section */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 30px 0;
+}
+
+.flex1 {
+    flex: 1;
+    /* Equal width for both columns */
+    padding: 20px;
+    text-align: center;
+}
+
+.flex2 {
+    flex: 1;
+    /* Equal width for both columns */
+    padding: 20px;
+    text-align: left;
+}
+
+/* Style for the image */
+.about img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        /* Stack columns on smaller screens */
+        align-items: center;
+    }
+
+    .flex1,
+    .flex2 {
+        flex: none;
+        /* Reset flex property for stacked layout */
+        width: 100%;
+    }
+
+    .about img {
+        margin-bottom: 20px;
+        /* Add some space between the image and text */
+    }
+}
+
+.hidden-heading {
+    display: none;
 }
