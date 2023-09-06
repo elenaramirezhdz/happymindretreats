@@ -22,6 +22,13 @@ h3 {
 
 }
 
+#about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #motivation {
     padding-right: 150px;
     padding-left: 150px;
