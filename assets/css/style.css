@@ -174,10 +174,13 @@ a:link {
 
     /*Benefits section*/
     #benefits {
-        display: flex;
+        display: grid;
+        grid-template-columns: auto;
         align-items: center;
         padding-right: 1px;
         padding-left: 1px;
+        justify-content: center;
+        text-align: center;
     }
 
     #benefits-heading {
@@ -187,7 +190,6 @@ a:link {
 }
 
 
-/*Took out code for ipads to check*/
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
@@ -558,10 +560,13 @@ a:link {
 
     /*Benefits section*/
     #benefits {
-        display: flex;
+        display: grid;
+        grid-template-columns: auto;
         align-items: center;
         padding-right: 1px;
         padding-left: 1px;
+        justify-content: center;
+        text-align: center;
     }
 
     #benefits-heading {
@@ -570,8 +575,25 @@ a:link {
     }
 }
 
+/* Media query: mobile phones (576px and down) */
+@media screen and (max-width: 576px) {
 
-/*Took out code for ipads to check*/
+    /*Benefits section*/
+    #benefits {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        padding-right: 1px;
+        padding-left: 1px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #benefits-heading {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+}
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
