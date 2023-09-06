@@ -10,6 +10,403 @@ body {
     color: #3a3a3a;
     font-family: 'Noto Sans', sans-serif;
     font-size: 16px;
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+/*Menu*/
+
+#menu {
+    font-size: 100%;
+    letter-spacing: 3px;
+    list-style-type: none;
+}
+
+#menu>li {
+    margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: calc(100% - 2rem);
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/* Navbar styles with dropdown toggle */
+nav {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
+}
+
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
+/* Main content */
+main {
+    /* Enlarge main element to push footer down*/
+    flex: 1 0 auto;
+    /* Add margin at the top to prevent content from being covered by the header */
+    margin-top: 47px;
+    /* Enable flex properties for child elements */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Yoga section */
+#yoga {
+    height: 700px;
+    width: 100%;
+    background: url('../images/yoga-cover.jpg') no-repeat center center / cover;
+    position: relative;
+}
+
+#cover-text {
+    color: white;
+}
+
+#register-button {
+    background-color: #f46e06;
+    color: white;
+    border: 1px solid black;
+    width: 200px;
+    padding: 5px 5px;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+#button-div {
+    padding-left: 80px;
+    width: 80px;
+}
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu>li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 200%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    /* Main content */
+    main {
+        /* Push main content down to accommodate larger header */
+        margin-top: 79px;
+    }
+
+    /* Yoga */
+    #cover-text {
+        width: 6rem;
+        right: 50px;
+    }
+
+}
+
+
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+
+    /*Benefits section*/
+    #benefits {
+        display: flex;
+        align-items: center;
+        padding-right: 1px;
+        padding-left: 1px;
+    }
+
+    #benefits-heading {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+}
+
+
+/*Took out code for ipads to check*/
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu>li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 100%;
+        line-height: 45px;
+        margin: 0 0.1rem;
+    }
+
+    #benefits {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        margin: 0 auto;
+        max-width: 600px;
+    }
+}
+
+
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
+    }
+
+    #register-button {
+        background-color: #f46e06;
+        color: white;
+        border: 1px solid black;
+        width: 200px;
+        height: 50px;
+        padding: 5px 5px;
+        text-transform: uppercase;
+    }
+
+    #register-button a {
+        color: white;
+    }
+
+    #start-text {
+        padding-right: 150px;
+        padding-left: 150px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    #motivation {
+        padding-right: 150px;
+        padding-left: 150px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        text-align: center;
+    }
+
+    #motivation {
+        background-color: #f46e06;
+        color: white;
+        margin-top: 50px;
+        background-size: cover;
+    }
+
+    #motivation h4 {
+        width: 800px;
+        margin: 0 auto;
+
+    }
+
+    /*Benefits section*/
+    #benefits {
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        align-items: center;
+        text-align: center;
+        gap: 60px;
+        margin: 0 auto;
+        max-width: 960px;
+
+    }
+
+    .columns {
+        width: 300px;
+        height: 500px;
+    }
+
+    #benefits-heading {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    /*Benefits section*/
+    #benefits {
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        align-items: center;
+        text-align: center;
+        gap: 60px;
+        margin: 0 auto;
+        max-width: 960px;
+
+    }
+
+    .columns {
+        width: 300px;
+        height: 500px;
+    }
+
+    #benefits-heading {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    #start-text {
+        padding-right: 150px;
+        padding-left: 150px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    #motivation {
+        padding-right: 150px;
+        padding-left: 150px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        text-align: center;
+    }
+
+    #motivation {
+        background-color: #f46e06;
+        color: white;
+        margin-top: 50px;
+        background-size: cover;
+    }
+
+    #motivation h4 {
+        width: 800px;
+        margin: 0 auto;
+    }
+
+}
+
+/* Main content */
+main {
+    /* Push main content down to accommodate larger header */
+    margin-top: 79px;
+}
+
+/* Yoga */
+#cover-text {
+    width: 500px;
+    height: 250px;
+    right: 50px;
+    background-color: rgb(96, 108, 32, .6);
+    padding-top: 80px;
+    padding-left: 80px;
+    margin-top: 80px;
+    line-height: 30px;
+}
+
+#cover-list {
+    list-style-type: none;
+}
+
+/* Footer */
+#social-icons {
+    list-style-type: none;
+    align-items: baseline;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* i am fixed */
+/*Google fonts import*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+/* General styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic project styles */
+    color: #3a3a3a;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
 }
 
 h1,
@@ -381,3 +778,13 @@ main {
 }
 
 /* i am fixed */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: white;
+
+    }
+
+    #logo {
+        font-size: 50%;
+    }
+}
