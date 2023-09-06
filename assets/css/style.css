@@ -108,6 +108,27 @@ h3 {
     }
 }
 
+/* Media query for screens above 992px (big laptops and desktops) */
+@media (min-width: 992px) {
+    .about {
+        padding: 40px;
+        /* Add more spacing around the container for larger screens */
+    }
+
+    .flex1,
+    .flex2 {
+        width: 30%;
+        /* Further adjust column width for big laptops and desktops */
+        margin: 0 30px;
+        /* Add more spacing between columns */
+    }
+
+    .about h2 {
+        font-size: 32px;
+        /* Increase font size for big laptops and desktops */
+    }
+}
+
 /*About page end*/
 
 #motivation {
@@ -565,4 +586,11 @@ main {
     justify-content: center;
 }
 
-/* i am fixed */
+/*Contact page*/
+#contact-header {
+    background: url('../images/yoga-about.jpg') no-repeat center center / cover;
+    height: 700px;
+    width: 100%;
+    position: relative;
+
+}
