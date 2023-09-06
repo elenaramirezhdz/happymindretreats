@@ -22,12 +22,44 @@ h3 {
 
 }
 
-#about {
+/*About page*/
+.about {
     display: flex;
-    align-items: center;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Center vertically */
 }
+
+.flex2 {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+.flex1 {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        /* Stack columns on small screens */
+        text-align: center;
+    }
+
+    .flex1,
+    .flex2 {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/*About page end*/
 
 #motivation {
     padding-right: 150px;
