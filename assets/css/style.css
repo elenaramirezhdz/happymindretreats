@@ -644,3 +644,76 @@ main {
 .submit-button:hover {
     background-color: rgb(96, 108, 32, .6);
 }
+
+/*Retreats page*/
+
+#retreats-header {
+    background: url('../images/retreats-header.jpg') no-repeat center center / cover;
+    height: 700px;
+    width: 100%;
+    position: relative;
+}
+
+/* Styles for the image gallery */
+#gallery {
+    text-align: center;
+    margin: 30px 0;
+}
+
+#photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#photos img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive styles for the gallery */
+@media (max-width: 768px) {
+    #photos {
+        flex-direction: column;
+    }
+
+    #photos img {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    .retreat-class {
+        padding-right: 150px;
+        padding-left: 150px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+        width: 800px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .retreat-class {
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .retreat-class {
+        padding-right: 150px;
+        padding-left: 150px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+        width: 800px;
+        margin: 0 auto;
+    }
+}
