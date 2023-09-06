@@ -9,7 +9,7 @@ body {
     /* Generic project styles */
     color: #3a3a3a;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 h1,
@@ -228,6 +228,7 @@ a:link {
         align-items: center;
         text-align: center;
         background-color: #f46e06;
+        background-size: cover;
     }
 
 }
@@ -274,11 +275,13 @@ a:link {
         background-color: #f46e06;
         color: white;
         margin-top: 50px;
+        background-size: cover;
     }
 
     #motivation h4 {
         width: 800px;
         margin: 0 auto;
+
     }
 
     /*Benefits section*/
@@ -301,6 +304,62 @@ a:link {
     #benefits-heading {
         text-align: center;
         padding-bottom: 50px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    /*Benefits section*/
+    #benefits {
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        align-items: center;
+        text-align: center;
+        gap: 60px;
+        margin: 0 auto;
+        max-width: 960px;
+
+    }
+
+    .columns {
+        width: 300px;
+        height: 500px;
+    }
+
+    #benefits-heading {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    #start-text {
+        padding-right: 150px;
+        padding-left: 150px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    #motivation {
+        padding-right: 150px;
+        padding-left: 150px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        text-align: center;
+    }
+
+    #motivation {
+        background-color: #f46e06;
+        color: white;
+        margin-top: 50px;
+        background-size: cover;
+    }
+
+    #motivation h4 {
+        width: 800px;
+        margin: 0 auto;
     }
 
 }
