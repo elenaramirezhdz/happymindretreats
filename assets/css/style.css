@@ -62,7 +62,51 @@ h3 {
     }
 }
 
+/* Responsive styles for screens 576px and below */
+@media (max-width: 576px) {
+    .about {
+        flex-direction: column;
+        /* Stack columns on small screens */
+        text-align: center;
+    }
 
+    .flex1,
+    .flex2 {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Media query for screens 390px and below */
+@media (max-width: 390px) {
+    .about h2 {
+        font-size: 20px;
+        /* Adjust font size for smaller screens */
+    }
+}
+
+/* Media query for screens 280px and below */
+@media (max-width: 280px) {
+    .about {
+        align-items: flex-start;
+        /* Align columns to the top on very small screens */
+    }
+
+    .flex1,
+    .flex2 {
+        width: 100%;
+        /* Full width for columns on very small screens */
+    }
+
+    .about h2 {
+        font-size: 18px;
+        /* Adjust font size for very small screens */
+    }
+
+    .flex1 {
+        width: fit-content;
+    }
+}
 
 /*About page end*/
 
