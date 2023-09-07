@@ -1,6 +1,6 @@
 # Happy Mind Retreats
 
-Visit the deployed site: [Happy Mind Retreats](LINK)
+Visit the deployed site: [Happy Mind Retreats](https://elenaramirezhdz.github.io/happymindretreats/index.html)
 
 ## CONTENTS
 
