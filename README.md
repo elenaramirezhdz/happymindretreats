@@ -237,6 +237,8 @@ I would like to acknowledge the following people:
 * Jubril Akolade - My Code Institute Mentor.
 
 * Rebecca and Sean - Tutors who gave me some tips to check.
+  
+* Gemma - Tutor, who helped me to get credits fo finish my project. 
 
 
 
