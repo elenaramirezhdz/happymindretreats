@@ -39,9 +39,10 @@ Visit the deployed site: [Happy Mind Retreats](https://elenaramirezhdz.github.io
   - [Codeanywhere Reminders](#codeanywhere-reminders)
 
 - - -
-![The Quiz Arms Banner](documentation/the-quiz-arms-banner.png)
 
 ## User Experience (UX)
+
+I used a clear website structure to navigate, I also used brand colors with a good contract, so that all the texts are readable. I combined texts and images, so that the site will look nice and user-friendly. 
 
 ### User Stories
 
