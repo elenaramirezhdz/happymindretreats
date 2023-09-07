@@ -200,7 +200,7 @@ I carried out tests and validation of the website.
 
 | No | Bug | How I solved the issue |
 | :--- | :--- | :--- |
-| 1 | Erros in responsive design in the header menu and the icons in the footer.
+| 1 | Erros in responsive design in the header menu. I changed the header width and checked the values, it helped. 
 
 | 2 | I solved the issues with the columns using Flexbox working with classes and setting flex-direction with the value of column. 
  
