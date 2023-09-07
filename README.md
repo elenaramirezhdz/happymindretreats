@@ -15,11 +15,11 @@ Visit the deployed site: [Happy Mind Retreats](https://elenaramirezhdz.github.io
     - [Colour Scheme](#colour-scheme)
     - [Typography](#typography)
     - [Imagery](#imagery)
-    - [Wireframes](#wireframes)
     - [Features](#features)
       - [The Home Page](#the-home-page)
-      - [The Game Page](#the-game-page)
-      - [The High Scores Page](#the-high-scores-page)
+      - [The About Page](#the-about-page)
+      - [The Retreats Page](#the-retreats-page)
+      - [The Contact Page](#the-contact-page)
     - [Accessibility](#accessibility)
   - [Technologies Used](#technologies-used)
     - [Languages Used](#languages-used)
@@ -214,8 +214,10 @@ I carried out tests and validation of the website.
 
 
 * I used this [video tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9i3FXJSUfmsNOx8E7u6UuhG) on YouTube to learn about Flexbox. 
+  
+*  I used this [video tutorial](https://www.youtube.com/watch?v=YBUMHRL1fmo&ab_channel=TylerPotts) by Tylor Potts on YouTube to learn about Contact Form.
 
-- I used this [video tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9itC4TxYMzFCfveyutyPOCY) by Net Ninja
+* I used this [video tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9itC4TxYMzFCfveyutyPOCY) by Net Ninja
 on YouTube to learn about Grid.
 
 ### Content
