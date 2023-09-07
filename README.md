@@ -102,6 +102,7 @@ All Pages on the website are responsive and have:
 
 The home page shows the benefits of Happy Mind Yoga retreats, it tells what the customer will get when going on a yoga and coaching retreat. 
 
+I worked with figma in the beginning. [Figma Mockup] (https://share.getcloudapp.com/JrumjPRW)
 
 #### The About Page
 
