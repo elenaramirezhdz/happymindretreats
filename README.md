@@ -1,6 +1,6 @@
 # Happy Mind Retreats
 
-Visit the deployed site: [The Quiz Arms](LINK)
+Visit the deployed site: [Happy Mind Retreats](LINK)
 
 ## CONTENTS
 
